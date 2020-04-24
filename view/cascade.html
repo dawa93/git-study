@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속, 겹침, 구체성 규칙</title>
+    <style>
+        .inheritance{
+            border: 2px solid blue;
+            color: red;
+            font-weight: 700;
+        }
+        .inheritance span{
+            border: inherit;
+            border-color: pink;
+        }
+        .inheritance a {
+            color:inherit;
+        }
+
+        #cascade{
+            color: purple
+        }
+        .note {
+            color:green;
+        }
+        p{
+            color: brown !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS의 3가지 개념</h1>
+    <h2>CSS  상속</h2>
+<p class="inheritance">CSS 속성은 상속하는 속성과 <span>상속하지 않는 속성이 있습니다.</span> 
+    <a href="#">상속하는 속성은 자식 요소에 영향을 미칩니다.</a> 상속하지 않는 속성은 자식 요소에 영향을 미치지 않습니다.</p>
+<h2>겹침</h2>
+    <p>종속(Cascade)이란 서로 다른 원점에서 가져온 속성 여럿을 조합해 최종 결과를 도출하는 알고리즘입니다. 
+        Cascading Style Sheets라는 이름에서도 알 수 있듯 종속은 CSS의 중심입니다. 이 글은 종속이 무엇인지, 
+        선언한 CSS 정의가 어떤 순서로 종속되는지, 그리고 여러분, 즉 웹 개발자에게 어떤 영향을 주는지 설명합니다.</p>
+    <p class = "note">종속(Cascade)이란 서로 다른 원점에서 가져온 속성 여럿을 조합해 최종 결과를 도출하는 알고리즘입니다. 
+        Cascading Style Sheets라는 이름에서도 알 수 있듯 종속은 CSS의 중심입니다. 이 글은 종속이 무엇인지, 
+        선언한 CSS 정의가 어떤 순서로 종속되는지, 그리고 여러분, 즉 웹 개발자에게 어떤 영향을 주는지 설명합니다.</p>
+    <p id ="cascade" class="note">종속(Cascade)이란 서로 다른 원점에서 가져온 속성 여럿을 조합해 최종 결과를 도출하는 알고리즘입니다. 
+        Cascading Style Sheets라는 이름에서도 알 수 있듯 종속은 CSS의 중심입니다. 이 글은 종속이 무엇인지, 
+        선언한 CSS 정의가 어떤 순서로 종속되는지, 그리고 여러분, 즉 웹 개발자에게 어떤 영향을 주는지 설명합니다.</p>
+     <p style="color:blue">종속(Cascade)이란 서로 다른 원점에서 가져온 속성 여럿을 조합해 최종 결과를 도출하는 알고리즘입니다. 
+        Cascading Style Sheets라는 이름에서도 알 수 있듯 종속은 CSS의 중심입니다. 이 글은 종속이 무엇인지, 
+        선언한 CSS 정의가 어떤 순서로 종속되는지, 그리고 여러분, 즉 웹 개발자에게 어떤 영향을 주는지 설명합니다.</p>
+</body>
+</html>
